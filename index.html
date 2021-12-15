@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="text site">
+    <meta name="keywords" content="html, css, site, project">
+    <meta name="author" content="Kateryna Shadrina">
+    <title>MGID layout test page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h3>
+                    layout
+                </h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">html</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">javascript</a></li>
+                </ul>
+            </nav>
+            <button>
+                <a href="#">Enter</a>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="banner">
+    <div class="container">
+        <div class="banner__content">
+            <h1>
+                <span>Monetize</span> your skills now!
+            </h1>
+            <button>
+                <a href="#">GO!</a>
+            </button>
+        </div>
+        <div id="slider" class="banner__slider slider">
+            <ul>
+                <li><img src="./img/slider.png" alt="round slider" id="next_slider"></li>
+                <li><img src="./img/slider.png" alt="round slider"></li>
+                <li><img src="./img/slider.png" alt="round slider"></li>
+                <li><img src="./img/slider.png" alt="round slider"></li>
+                <li><img src="./img/slider.png" alt="round slider"></li>
+            </ul>
+        </div>
+        <a href="#" class="slider__control" onclick="myFunction()" data-slide="next"><img src="./img/arrow.png" alt="next"></a>
+    </div>
+</div>
+
+    <div class="content">
+    <div class="container">
+        <div class="content__block">
+            <div class="content__item">
+                <h3>
+                    Something about you
+                </h3>
+                <article>
+                    <p>
+                        In this section, you can specify any information about yourself, insert your photoes, your interests and skills. It is also desirable to use tag canvas.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda esse labore laudantium magnam molestias nulla quidem soluta ut velit. Accusantium aliquam aliquid consequatur consequuntur hic illum nostrum quidem voluptatibus!
+                        Asperiores, aut illo iusto modi possimus rem soluta! Alias asperiores cumque, delectus dolore dolorum ea eos error explicabo facilis in inventore iure minus nam odit quis sint totam vero vitae.
+                        Adipisci alias, aut consequuntur cumque dignissimos enim et ex excepturi facilis fugit illo laudantium libero maiores maxime necessitatibus omnis optio quis rerum saepe similique. Cumque cupiditate ducimus neque similique voluptate!
+                        Laborum optio recusandae voluptatum. Ad asperiores blanditiis consectetur cum dicta dolor ducimus eos eum explicabo hic iusto laborum magnam mollitia nesciunt nihil qui, rem reprehenderit repudiandae rerum sint vero vitae!
+                        Accusamus aliquam beatae blanditiis cum deserunt dolorem dolores ea enim eos exercitationem facere fugit, hic ipsa iusto nihil nulla numquam perferendis quia quisquam ratione similique suscipit vero, vitae voluptas voluptatum!
+                    </p>
+                </article>
+            </div>
+            <div class="content__item">
+                <p id="photo_title">
+                    Your photo
+                </p>
+                <img src="./img/gingercookie.png" alt="ginger cookies lies in the big cup of cocoa, creating cozy atmosphere">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="form">
+        <div class="container">
+            <div class="form__block">
+                <h2>
+                    Register
+                </h2>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input list="country" placeholder="Country">
+                        <datalist id="country">
+                            <option value="Country 1">Country 1</option>
+                            <option value="Country 2">Country 2</option>
+                            <option value="Country 3">Country 3</option>
+                        </datalist>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p class="copyright">
+        @ 2015 layout
+    </p>
+</footer>
+
+<script>
+    function myFunction() {
+        document.getElementById('next_slider').src='./img/slider_hover.png';
+    }
+</script>
+</body>
+</html>
